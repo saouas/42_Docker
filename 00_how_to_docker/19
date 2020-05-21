@@ -1,0 +1,3 @@
+docker run --name=Abathur -it --tty -p 3000:3000 -v ${HOME}:/root python:2-slim bash 
+pip install flask && python /root/app.py
+cd /root/ && flask run --host 0.0.0.0 --port 3000
